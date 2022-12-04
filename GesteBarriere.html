@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Covid-19</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- Barre de navigation -->
+    <!-- Barre de navigation -->
+    <nav class="nav-bar">
+      <div>
+        <div class="covid">COVID<strong>19</strong></div>
+      </div>
+      <ul class="links">
+        <li class="link"><a href="./index.html">Acceuil</a></li>
+        <li class="link"><a href="./statistique.html">statistique</a></li>
+        <li class="link"><a href="./varaints.html">variants</a></li>
+        <li class="link"><a href="./symptomes.html">Symptômes</a></li>
+        <li class="link">
+          <a href="./traitement.html">Traitement</a>
+        </li>
+        <li class="link">
+          <a href="./Covid-19-en-ALgérie.html">Covid-19 en ALgérie</a>
+        </li>
+        <li class="link" id="gesteBarriere">
+          <a href="./GesteBarriere.html">Les gestes barrières</a>
+        </li>
+        <li class="link"><a href="./formulaire.html">contactez-nous</a></li>
+        <li class="link"><a href="#footer">A propos</a></li>
+      </ul>
+    </nav>
+    <br /><br /><br /><br />
+  
+    <section class="principale">
+      <div>
+        <p class="mes-para">
+          Face à l'épidémie de <strong> coronavirus</strong>, c'est l'occasion de rappeler les
+          diverses mesures de prévention, moyen le plus efficace pour se
+          protéger du virus selon les experts. "Si ces mesures barrières sont
+          bien faites, c'est ce qui marche le mieux contre le virus", rappelle
+          le Dr. Agnès Ricard-Hibon, présidente de la Société française de
+          Médecine d’Urgence (SFMU). Quelles sont ces gestes essentiels ?
+        </p>
+      </div>
+      <!--Gallerie de photos en flex avec effet de zoom dans une image à l’intérieur d’un bloc sans changer la taille du bloc en lui meme en plus, au clique sur chaque photo on se trouvera dans le paragraphe correspendant a cette derniere grace au tag <a>-->
+      <div class="main">
+        <div class="container-img">
+          <a href="#lavage"><img src="../images/lavage-main.jpg" /></a>
+        </div>
+
+        <div class="container-img">
+          <a href="#gel"><img src="../images/gel.jpg" /></a>
+        </div>
+        <div class="container-img">
+          <a href="#masque"><img src="../images/masque.jpg" /></a>
+        </div>
+
+        <div class="container-img">
+          <a href="#net"><img src="../images/net.jpg" /></a>
+        </div>
+
+        <div class="container-img">
+          <a href="#dist"><img src="../images/dist.jpg" /></a>
+        </div>
+      </div>
+      <!-- Fin de la gallerie -->
+<!-- <br> -->
+<!-- paragraphe lavage -->
+      <div id="lavage">
+          <h2 class="mes-titres-sec">Bien se laver les mains, le premier geste-barrière</h2>
+          <p class="mes-para">Comme pour toute épidémie, un lavage régulier et efficace des mains est indispensable pour réduire les risques de contamination. 
+
+            Selon les recommandations du ministère des Solidarités et de la Santé, pour bien se laver il est recommandé de :
+            <!-- liste ordonnée chque ligne se grossie au hover -->
+            <ol>
+                <li class="list-gestes">Les passer sous l’eau ;</li>
+                <li class="list-gestes"> Les savonner de préférence au savon liquide puis les frictionner pendant 30 secondes ;</li>
+                <li class="list-gestes">Un lavage complet doit comprendre les ongles, le bout des doigts, les paumes et l’extérieur des mains, les jointures et les poignets ;</li>
+                <li class="list-gestes">Les rincer à l’eau claire ;</li>
+                <li class="list-gestes">Se sécher les mains sur une serviette propre ou un essuie-mains à usage unique.</li>
+            </ol>
+        </p>
+      </div>
+<!-- <br> -->
+<!-- paragraphe gel -->
+<div id="gel">
+        <h2 class="mes-titres-sec">Le gel hydroalcoolique, un allié face aux épidémies</h2>
+        <p class="mes-para">
+            À défaut d’eau et de savon, utilisez un gel hydroalcoolique pour vous nettoyer les mains. Les règles sont les mêmes, le geste est à répéter à chaque fois que nécessaire. Pour désinfecter les mains, "le gel est tout aussi efficace qu'un lavage à l'eau et au savon", précise le Dr. Agnès Ricard-Hibon. Petite précision tout de même, "les solutions hydro-alcooliques désinfectent mais ne nettoient pas ; elles ne peuvent donc pas remplacer le lavage à l’eau et au savon lorsque les mains sont sales", écrit l'Académie nationale de Médecine dans un communiqué.
+        </p>
+      </div>
+<!-- <br> -->
+<!-- paragraphe masque -->
+<div id="masque">
+  <!-- image avec un effet d'ombre  -->
+  <figure>
+    <img
+      src="../images/typebavette.jpg"
+      alt="type-de-bavette"
+      class="image-gb"
+    />
+  </figure>
+<h2 class="mes-titres-sec">Masques Covid-19 </h2>
+<p class="mes-para">
+    Le port du masque est essentiel pour ne pas diffuser la maladie par les postillons (toux, éternuements). Face à l'émergence de nouveaux variants et la remise en question du choix du masque le Haut Conseil de la Santé Publique (HCSP) a livré ses recommandations. 
+
+Les masques en tissu de catégorie 1 fournis pas les industriels tout comme les masques chirurgicaux restent les plus recommandés à l'heure actuelle. Tous les deux assurent une filtration à plus de 90% des particules de trois microns.  
+
+À l'inverse, Didier Lepelletier, co-président du groupe de travail Covid-19 du HCSP, a émis des réserves sur les masques de catégorie 2 qui ont démontré une efficacité de filtration inférieure à 70%. Ils sont donc à éviter, tout comme “les masques fabriqués de manière artisanale où il n’y a aucun contrôle de leur performance qui est réalisé”.
+
+Enfin, bien que les masques FFP2 permettent de se protéger soi-même en plus de protéger les autres, le HCSP ne recommande pas son usage pour le moment. Il est moins adapté à l’utilisation dans la vie quotidienne en raison d’un inconfort thermique et de la résistance respiratoire. Le port du FFP2 est donc plus limité dans le temps. Par ailleurs, il ne convient pas à toutes les formes de visage. Il reste donc réservé aux soignants.
+</p></div>
+<!-- <br> -->
+<!-- paragraphe nettoyage des surfaces et objets -->
+<div id="net">
+<h2 class="mes-titres-sec">Nettoyer régulièrement les surfaces et les objets courants </h2>
+<p class="mes-para">
+    Une étude publiée le 4 mars dans la revue américaine JAMA a montré que les patients atteints par le virus contaminaient leur chambre et leur salle de bains. Pour éviter la propagation du virus, une hygiène rigoureuse est indispensable. 
+
+En effet les scientifiques ont prouvé que si la contamination environnementale était un moyen de transmission potentiel, le virus ne survivait pas à un nettoyage à l'aide d'un désinfectant à usage courant, effectué deux fois par jour. 
+</p></div>
+<!-- <br> --> 
+<!-- paragraphe distanciation -->
+<div id="dist">
+<h2 class="mes-titres-sec">Eviter les contacts proches </h2>
+<p class="mes-para">
+    Le coronavirus se transmet par les postillons notamment par le biais de la toux et des éternuements. Un contact étroit est aujourd’hui considéré comme nécessaire à la transmission du virus,Il est recommandé d’éviter les lieux très fréquentés et les rassemblements, qui demeurent interdits. Il est recommandé d'éviter de surcharger les hôpitaux si d'autres solutions sont possible.
+</p>
+</div>
+
+</section>
+    <!-- footer -->
+    <br><br>
+    <footer id="footer">
+      <div class="contenu-footer">
+          <div class="bloc-footer-services">
+              <h2 class="mes-titres-footer">A propos</h2>
+              <ul class="links-footer">
+                <li class="link-footer"><a href="">Partenariat</a></li>
+                <li class="link-footer"><a href="formulaire.html">Demande d'informations</a></li>
+                <li class="link-footer"><a href="">Cookies</a></li>
+                <li class="link-footer"><a href="">Mentions legales</a></li>
+                <li class="link-footer"><a href="">Politique de confidentialite</a></li>
+              </ul>
+          </div>
+
+          <div class="bloc-footer-services">
+              <h2 class="mes-titres-footer">Restons en contact</h2>
+              <ul>
+                <li class="none"><p class="mes-para">55-44-44-55-55</p></li>
+                <li class="none"><p class="mes-para">supportclient@contact.com</p></li>
+                <li class="none"><p class="mes-para">Cite 5 Juillet, Bab Ezzouar</p></li>
+              </ul>
+          </div>
+          <div class="bloc-footer-services">
+              <h2 class="mes-titres-footer">Suivez-nous</h2>
+              <ul class="links-footer">
+                  <li class="link-footer"><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                  <li class="link-footer"><a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                  <li class="link-footer"><a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter-square"></i> Twitter</a></li>
+                  <li class="link-footer"><a href="https://Youtube.com"><i class="fa-brands fa-youtube"></i> Youtube</a></li>
+              </ul>
+          </div>
+      </div>
+  </footer>
+  </body>
+</html>
