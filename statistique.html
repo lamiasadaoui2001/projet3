@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid-19</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- Barre de navigation autres pages -->
+    <nav class="nav-bar">
+      <div>
+        <div class="covid">COVID<strong>19</strong></div>
+      </div>
+      <ul class="links">
+        <li class="link"><a href="./index.html">Acceuil</a></li>
+        <li class="link" id="stat">
+          <a href="./statistique.html">statistique</a>
+        </li>
+        <li class="link"><a href="./varaints.html">variants</a></li>
+        <li class="link"><a href="./symptomes.html">Symptômes</a></li>
+        <li class="link">
+          <a href="./traitement.html">Traitement</a>
+        </li>
+        <li class="link">
+          <a href="./Covid-19-en-ALgérie.html">Covid-19 en ALgérie</a>
+        </li>
+        <li class="link">
+          <a href="./GesteBarriere.html">Les gestes barrières</a>
+        </li>
+        <li class="link"><a href="./formulaire.html">contactez-nous</a></li>
+        <li class="link"><a href="#footer">A propos</a></li>
+      </ul>
+    </nav>
+    <br /><br /><br /><br />
+
+    <h1 class="statnote">Les statistique Coronavirus dans le Monde</h1>
+    <hr />
+    <br /><!-- le titre lumineux avec son reflais qui se trouve dans la classe statnote-->
+    <!--la partie de la map du monde et le tableau qui indique les statistique du covid-->
+    <section class="principale">
+      <div id="map2">
+        <!--a fin d'integer une carte map il faire copier coller du lien dans ddogle map et le metre dans la balise iframe-->
+        <iframe
+          id="map2"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56770477.71730322!2d-34.2506603593455!3d27.799557410396723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7e8a6a28037bd1%3A0x7140bee3abd7f8a2!2zQWxnw6lyaWU!5e1!3m2!1sfr!2sdz!4v1649112525033!5m2!1sfr!2sdz"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <br /><br /><br /><!--la table des stat des pays-->
+      <table class="tab-monde">
+        <thead>
+          <tr>
+            <th class="mon-tab">Pays</th>
+            <th class="mon-tab">Morts</th>
+            <th class="mon-tab">Rétablis</th>
+            <th class="mon-tab">Cas confirmés</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="mon-tab"><b>1.États-Unis</b></td>
+            <td class="mon-tab">982 565</td>
+            <td class="mon-tab">6 298 082</td>
+            <td class="mon-tab">80 155 397</td>
+          </tr>
+          <tr>
+            <td class="mon-tab"><b>2.Inde</b></td>
+            <td class="mon-tab">521 358</td>
+            <td class="mon-tab">30 974 748</td>
+            <td class="mon-tab">43 029 044</td>
+          </tr>
+          <tr>
+            <td class="mon-tab"><b>3.Brésil</b></td>
+            <td class="mon-tab">660 410</td>
+            <td class="mon-tab">17 771 228</td>
+            <td class="mon-tab">30 002 785</td>
+          </tr>
+          <tr>
+            <td class="mon-tab"><b>4.France</b></td>
+            <td class="mon-tab">143 540</td>
+            <td class="mon-tab">415 111</td>
+            <td class="mon-tab">26 186 606</td>
+          </tr>
+          <tr>
+            <td class="mon-tab"><b>5.Allemagne</b></td>
+            <td class="mon-tab">130 052</td>
+            <td class="mon-tab">3 659 260</td>
+            <td class="mon-tab">21 706 329</td>
+          </tr>
+          <tr>
+            <td class="mon-tab"><b>6.Royaume-Uni Royaume-Uni</b></td>
+            <td class="mon-tab">166 168</td>
+            <td class="mon-tab">24 693</td>
+            <td class="mon-tab">21 379 545</td>
+          </tr>
+          <tr>
+            <td class="mon-tab"><b>7.Russie</b></td>
+            <td class="mon-tab">362 581</td>
+            <td class="mon-tab">5 609 682</td>
+            <td class="mon-tab">17 651 048</td>
+          </tr>
+          <tr>
+            <td class="mon-tab"><b>8.Turquie</b></td>
+            <td class="mon-tab">98 197</td>
+            <td class="mon-tab">5 478 185</td>
+            <td class="mon-tab">14 907 378</td>
+          </tr>
+          <tr>
+            <td class="mon-tab"><b>9.Italie</b></td>
+            <td class="mon-tab">159 909</td>
+            <td class="mon-tab">4 144 608</td>
+            <td class="mon-tab">14 877 144</td>
+          </tr>
+          <tr>
+            <td class="mon-tab"><b>10.Corée du Sud</b></td>
+            <td class="mon-tab">17 662</td>
+            <td class="mon-tab">180 719</td>
+            <td class="mon-tab">14 267 401</td>
+          </tr>
+          <tr>
+            <td class="mon-tab"><b>11.Espagne</b></td>
+            <td class="mon-tab">102 541</td>
+            <td class="mon-tab">150 376</td>
+            <td class="mon-tab">11 551 574</td>
+          </tr>
+          <tr>
+            <td class="mon-tab"><b>12.Viêt Nam</b></td>
+            <td class="mon-tab">22 642</td>
+            <td class="mon-tab">28 771</td>
+            <td class="mon-tab">8 098 546</td>
+          </tr>
+          <tr>
+            <td class="mon-tab"><b>15.Iran</b></td>
+            <td class="mon-tab">140 368</td>
+            <td class="mon-tab">3 444 798</td>
+            <td class="mon-tab">7 171 165</td>
+          </tr>
+          <tr>
+            <td class="mon-tab"><b>16.Japon</b></td>
+            <td class="mon-tab">28 332</td>
+            <td class="mon-tab">852 451</td>
+            <td class="mon-tab">6 730 654</td>
+          </tr>
+          <tr>
+            <td class="mon-tab"><b>17.Colombie</b></td>
+            <td class="mon-tab">139 670</td>
+            <td class="mon-tab">4 615 354</td>
+            <td class="mon-tab">6 086 233</td>
+          </tr>
+          <tr>
+            <td class="mon-tab"><b>18.Indonésie</b></td>
+            <td class="mon-tab">155 164</td>
+            <td class="mon-tab">2 907 920</td>
+            <td class="mon-tab">6 015 748</td>
+          </tr>
+          <tr>
+            <td class="mon-tab"><b>19.Pologne</b></td>
+            <td class="mon-tab">115 345</td>
+            <td class="mon-tab">2 653 981</td>
+            <td class="mon-tab">5 970 114</td>
+          </tr>
+          <tr>
+            <td class="mon-tab"><b>20.Mexique</b></td>
+            <td class="mon-tab">323 235</td>
+            <td class="mon-tab">2 270 427</td>
+            <td class="mon-tab">5 666 921</td>
+          </tr>
+          <tr></tr>
+        </tbody>
+      </table>
+    </section>
+    <br /><br />
+
+    <footer id="footer">
+      <div class="contenu-footer">
+        <div class="bloc-footer-services">
+          <h2 class="mes-titres-footer">A propos</h2>
+          <ul class="links-footer">
+            <li class="link-footer"><a href="">Partenariat</a></li>
+            <li class="link-footer">
+              <a href="formulaire.html">Demande d'informations</a>
+            </li>
+            <li class="link-footer"><a href="">Cookies</a></li>
+            <li class="link-footer"><a href="">Mentions legales</a></li>
+            <li class="link-footer">
+              <a href="">Politique de confidentialite</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bloc-footer-services">
+          <h2 class="mes-titres-footer">Restons en contact</h2>
+          <ul>
+            <li class="none"><p class="mes-para">55-44-44-55-55</p></li>
+            <li class="none">
+              <p class="mes-para">supportclient@contact.com</p>
+            </li>
+            <li class="none">
+              <p class="mes-para">Cite 5 Juillet, Bab Ezzouar</p>
+            </li>
+          </ul>
+        </div>
+        <div class="bloc-footer-services">
+          <h2 class="mes-titres-footer">Suivez-nous</h2>
+          <ul class="links-footer">
+            <li class="link-footer">
+              <a href="https://www.facebook.com"
+                ><i class="fa-brands fa-facebook"></i> Facebook</a
+              >
+            </li>
+            <li class="link-footer">
+              <a href="https://www.instagram.com/accounts/login/"
+                ><i class="fa-brands fa-instagram"></i> Instagram</a
+              >
+            </li>
+            <li class="link-footer">
+              <a href="https://twitter.com/i/flow/login"
+                ><i class="fa-brands fa-twitter-square"></i> Twitter</a
+              >
+            </li>
+            <li class="link-footer">
+              <a href="https://Youtube.com"
+                ><i class="fa-brands fa-youtube"></i> Youtube</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

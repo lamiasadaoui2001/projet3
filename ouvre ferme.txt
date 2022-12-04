@@ -1,0 +1,280 @@
+<template>
+    <div class="mainVisiteur">
+        <header>
+        <div class="wrapper">
+                <div class="static-txt">Listes Des</div>
+                <ul class="dynamic-txts">
+                    <li><span>Volume ...</span></li>
+                </ul>
+            </div>
+        </header><br><br>
+
+        <div class="container">
+            <div class="accordion">
+                <h2>Volumes</h2>
+            <div class="accordion-item" id="ques" v-for="Article in articles" v-bind:key="Article.NumA">
+                    <a class="V" href="#ques">
+                        {{Article.Numero_Article}}
+                     <i class="fa-solid fa-add "></i>
+                     <i class="fa-solid fa-remove "></i>
+                    </a>
+                     <div class="text" >
+                    <p>Voir les Articles</p> 
+                     </div>
+                
+                
+                </div>
+            </div>
+        </div>
+    </div>
+       
+</template>
+
+<script>
+import axios from 'axios'
+
+export default {
+    name:'Volumes',
+    data() {
+        return {
+            articles: []
+            // volumes: {},
+            // numeros: [],
+            //     Num_Volume:'',
+        }
+    },
+    components:{
+
+    },
+    mounted() {
+        this.getarticles() ;
+        // this.getnumeros() ;
+    },
+    methods: {
+        async getarticles() {
+            // this.$store.commit('setIsLoading', true)
+
+            axios
+                .get('/api/v1/articles/')
+                .then(response => {
+                    console.log(response)
+                    this.articles= response.data;
+                })
+                 .catch(error => {
+                    console.log(error)
+                 })
+
+            // this.$store.commit('setIsLoading',false )
+        }
+    //     async getnumeros() {
+    //         this.$store.commit("setIsLoading", true);
+    //         const  Num = this.$route.params.id_Numero
+    //         axios
+    //             .get(`/api/v1/numeros/`)
+    //             .then((response) => {
+    //                 this.numeros = response.data;
+    //             })
+    //             .catch((error) => {
+    //                 console.log(error);
+    //             });
+    //         this.$store.commit("setIsLoading", false);
+    //     },
+    }
+}
+</script>
+
+<style lang="scss" scoped>
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+.container {
+    background:  rgb(218, 219, 222);
+    box-shadow: 0px 2px 30px 11px rgba(10, 10, 10, 0.5);
+    padding:80px;
+    border-radius:10px;
+    -webkit-transition: ease-in all 0.2s;
+    -moz-transition: ease-in all 0.2s;
+    -ms-transition: ease-in all 0.2s;
+    -o-transition: ease-in all 0.2s;
+    transition: ease-in all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+header{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+// .boxs{
+//     display:table-cell;
+//     vertical-align:middle;
+//     border-bottom: 20px solid rgb(99, 119, 147);
+//     border-bottom-right-radius: 10px;
+//     border-bottom-left-radius: 10px;
+    
+// }
+.accordion-item{
+    position:relative;
+    width: 700px;
+    // color: antiquewhite;
+    background-color: wheat;
+    border-radius:.4rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: .5rem 2px .5rem rgba(0, 0, 0, .1);
+    
+}
+.V i{
+    color: aquamarine;
+    padding: .5rem;
+}
+.V .fa-remove{
+    display: none;
+}
+.V{
+    // list-style: none;
+    padding: 1rem 0px;
+    width: 100%;
+    background-color: rgb(29, 21, 8);
+    text-decoration: none;
+    // box-shadow: 0px 5px 25px rgba(0, 0, 0, .1);
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    font-size: 1.6rem;
+     color: rgb(219, 232, 232);
+}
+// .boxs h2{
+//     color: #fff;
+//     background: rgb(99, 119, 147);
+//     padding: 10px 20px;
+//     font-size: 20px;
+//     font-weight: 700;
+//     border-top-right-radius: 10px;
+//     border-top-left-radius: 10px;
+// }
+// .box ul li{
+//     list-style: none;
+//     padding: 20px;
+//     width: 100%;
+//     background: #fff;
+//     box-shadow: 0px 5px 25px rgba(0, 0, 0, .1);
+//     justify-content: space-between;
+//     align-items: center;
+//     display: flex;
+// }
+// .box ul li i{
+//     color: #e7d5ff;
+//     padding: .5rem;
+// }
+// .box ul li .fa-remove{
+//     display: none;
+// }
+.text{
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+     background-color: #92a2c7;
+}
+.text::before{
+    content: "";
+    position: absolute;
+    width: .6rem;
+    height: 90% ;
+    background-color: #0f3182;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.text p{
+    color: #0f3182;
+    font-size: 1.4rem;
+    padding: 2rem;
+}
+.accordion-item:target .text{
+    max-height: 20rem;
+}
+// .accordion-item:target .V .fa-add{
+//     display: none;
+// }
+// .accordion-item:target .V .fa-remove{
+//     display: block;
+// }
+
+// // .box ul li i{
+// //     justify-content: space-between;
+// // }
+// // .box ul :hover li
+// // {
+// //     opacity: 0.2
+// // }
+// // .box ul li:hover{
+// //     transform: scale(1.1);
+// //     z-index: 100;
+// //     background: rgb(99, 119, 147);
+// //     box-shadow: 0px 5px 25px rgba(0, 0, 0, .2);
+// //     color: #fff;
+    
+// // }
+
+// .box ul li span{
+//     width: 20px;
+//     height: 20px;
+//     text-align: center;
+//     line-height: 20px;
+//     background: rgb(99, 119, 147);
+//     color: #fff;
+//     display: inline-block;
+//     border-radius: 50%;
+//     margin-right: 10px;
+//     font-size: 12px;
+//     font-weight: 600;
+//     transform: translateY(-2px);
+// }
+// .box ul li:hover span{
+//     background: #fff;
+//     color: rgb(99, 119, 147);
+// }
+.wrapper{
+     display: inline-flex;
+}
+.wrapper .static-txt{
+    color:var(--bleu);
+    font-size: 60px;
+    font-weight: 400;
+}
+.wrapper .dynamic-txts{
+    margin-left: 30px;
+}
+.dynamic-txts li{
+    color: rgb(99, 119, 147);
+    list-style: none;
+    font-size: 40px;
+    font-weight: 50;
+}
+.dynamic-txts li span{
+    position: relative;
+}
+.dynamic-txts li span::after{
+    content:"";
+    position:absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: white;
+    border-left: 2px solid rgb(99, 119, 147);
+    animation: typing 1.5s steps(15) infinite;
+}
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+</style>

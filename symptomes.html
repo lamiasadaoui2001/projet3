@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Covid-19</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+       <!-- Barre de navigation autres pages -->
+       <nav class="nav-bar">
+        <div>
+          <div class="covid">COVID<strong>19</strong></div>
+        </div>
+        <ul class="links">
+          <li class="link"><a href="./index.html">Acceuil</a></li>
+          <li class="link"><a href="./statistique.html">statistique</a></li>
+          <li class="link"><a href="./varaints.html">variants</a></li>
+          <li class="link" id="symptomes"><a href="./symptomes.html">Symptômes</a></li>
+          <li class="link">
+            <a href="./traitement.html">Traitement</a>
+          </li>
+          <li class="link">
+            <a href="./Covid-19-en-ALgérie.html">Covid-19 en ALgérie</a>
+          </li>
+          <li class="link">
+            <a href="./GesteBarriere.html">Les gestes barrières</a>
+          </li>
+          <li class="link"><a href="./formulaire.html">contactez-nous</a></li>
+          <li class="link"><a href="#footer">A propos</a></li>
+        </ul>
+      </nav>
+    <div class="apercu"> <!--Pour le repartir en colonnes (la classe definition dans un cote et l'image dans l'autre)-->
+        <div class="definition">
+            <h1 class="mes-titres-sec">Symptômes</h1>
+            <p class="mes-para">Les personnes affectées par Covid-19 peuvent développer ou pas de symptôme, ces derniers 
+                peuvent varier:<ul>
+                    <li class="list-gestes">D'une personne à une autre</li>
+                    <li class="list-gestes"><a href="#age">Par rapport à l'âge</a></li> <!--lien vers symptomes par age-->
+                    <li class="list-gestes">Le <a href="variants.html">variant </a>attrapé</li> <!--lien vers page variants-->
+                </ul>
+                <p class="mes-para"> On peut distinguer trois types de symptômes:</p><ul>
+                    <li class="list-gestes"><a href="#plus-frequents">Les plus fréquents</a></li>
+                    <li class="list-gestes"><a href="#moins-frequents">Les moins fréquents</a></li>
+                    <li class="list-gestes"><a href="#graves">Graves</a></li> 
+                </ul>
+            </p>
+        </div>
+        <div id="caroussel"> <!--Pour faire un defile d'images-->
+            <div class="images">
+                <img src="../images/Eternuement.jpg" alt="Eternuement">
+                <img src="../images/Fievre.jpg" alt="Fievre">
+                <img src="../images/Mal de tete.jpg" alt="Maux de tete">
+                <img src="../images/Toux.png" alt="Toux">
+            </div>
+        </div>
+    </div>
+    <div class="special"> <!--Les questions frequentes des gens (sur cette page)-->
+        <h3>Période d'incubation</h3> 
+        <p class="mes-para">Le délai d'incubation de la Covid-19 est de 3 à 5 jours en général,
+             mais peut s’étendre jusqu’à 14 jours. On peut également être porteur 
+             sain(asymptomatique).
+        </p>
+    </div>
+    <div class="types-symptôme"> <!--Pour lister les symptomes-->
+        <h2 class="mes-titres-sec" id="plus-frequents">Quels sont les symptômes les plus fréquents?</h2>
+        <ul>
+            <li class="list-gestes">fièvre</li>
+            <li class="list-gestes">toux</li>
+            <li class="list-gestes">fatigue</li>
+            <li class="list-gestes">perte de l’odorat ou du goût</li>
+        </ul>
+    </div>
+    <div class="types-symptôme">
+        <h2 class="mes-titres-sec" id="moins-frequents">Quels sont les symptômes les moins fréquents?</h2>
+        <ul>
+            <li class="list-gestes">maux de gorge</li>
+            <li class="list-gestes">maux de tête</li>
+            <li class="list-gestes">courbatures</li>
+            <li class="list-gestes">diarrhée</li>
+            <li class="list-gestes">éruption cutanée, ou décoloration des doigts ou des orteils</li>
+            <li class="list-gestes">yeux rouges ou irrités</li>
+        </ul>
+    </div>
+    <div class="special">
+        <h3 >Grippe ou Covid-19?</h3>
+            <p class="mes-para">Comme vous pouvez le remarquer, le coronavirus représente des symptômes
+                similaires a ceux d'autres maladies, notamment la <strong>grippe</strong>.
+                <br>Pour la grippe, la fièvre, les maux de tête, les douleurs musculaires, la fatigue, 
+                les éternuements et le nez bouché sont plutôt communs. Or, pour le coronavirus, 
+                l'apparition de la <strong>fièvre</strong> est très commune mais les autres signes peuvent varier d'un
+                 patient à l'autre. Parmi eux, des réactions cutanées, <strong>une perte d’odorat et de goût</strong> 
+                 caractéristiques. Les lésions du poumon (observés par scanner) sont particulières et légèrement 
+                 différentes de celles de la grippe saisonnière.
+            </p>
+    </div>
+
+
+    <div class="types-symptôme">
+        <h2 class="mes-titres-sec" id="graves">Quels sont les symptômes graves?</h2>
+        <ul class="mes-para">
+            <li class="list-gestes">difficultés à respirer ou essoufflement</li>
+            <li class="list-gestes">perte d'élocution ou de motricité, ou état confusionnel</li>
+            <li class="list-gestes">douleur au niveau de la poitrine</li>
+        </ul>
+        <div class="special">
+            <h3>Présentez-vous un de ces symptômes?</h3>
+            <p class="mes-para">Veuillez consulter un professionnel de santé. Une assistance 
+                respiratoire et une hospitalisation pourraient être nécessaire, 
+                ainsi qu'une radiographie pour évaluer l'état de l'infection 
+                dans les poumons.
+            </p>
+        </div>
+    </div>
+
+    <div class="par-age" id="age"> <!--On cite 2 types d'age qui ont des symptomes completement differents-->
+        <div class="personne">
+            <div class="symptome-Enfant">
+                <h2 class="mes-titres-sec">Symptômes chez les enfants</h2>
+                <p class="mes-para">Un récent examen systématique des signes et symptômes de la COVID-19 confirmée en laboratoire chez 
+                    les enfants et les jeunes de moins de 19 ans a révélé que les cas asymptomatiques ayant des tests 
+                    de laboratoire positifs allaient de 15 % à 42 %. La fièvre et la toux étaient les symptômes les 
+                    plus courants; les proportions de fièvre variaient de 46 % à 64 %, et les proportions de toux, de
+                     32 % à 56 %. Tous les autres signes et symptômes étaient présents dans moins de 10 % à 20 % des 
+                     cas. Les vomissements, la diarrhée et les troubles abdominaux variaient de 7 % à 18 %.
+                </p>
+                <p class="mes-para">Dans le cadre d'un programme de dépistage, une étude multicentrique d'un hôpital français a 
+                    constaté que jusqu'à la moitié des cas pédiatriques étaient asymptomatiques lors du dépistage à 
+                    l'entrée à l'hôpital. Au moment d'évaluer les enfants, il faut se rappeler que les signes et 
+                    symptômes de la COVID-19 sont semblables à ceux d'autres infections et processus non infectieux, 
+                    notamment la grippe, d'autres infections virales des voies respiratoires supérieures, la pharyngite
+                     à streptocoques, l'asthme et les allergies. Le manque de spécificité des signes ou symptômes et la
+                      proportion importante d'infections asymptomatiques compliquent la recherche du SRAS-CoV-2 chez les
+                       enfants par dépistage fondé sur les symptômes.
+                </p>
+            </div>
+            <div class="image">
+                <img class=" imgg"src="../images/pexels-cottonbro-5858738.jpg" alt="Enfant malade">
+            </div>
+        </div>
+        <div class="personne">
+            <div class="symptome-personne-agee">
+                <h2 class="mes-titres-sec">Symptômes chez les personnes âgées</h2>
+                <p class="mes-para">
+                    Les symptômes chez les personnes âgées peuvent être atypiques ou subtils. La confusion mentale, l'état
+                     confusionnel aigu et/ou la perte de mouvement, de mobilité et d'élocution peuvent survenir chez les 
+                     personnes âgées. La fièvre, la toux et l'essoufflement peuvent être absents ou moins fréquents.
+                </p> 
+                <p class="mes-para">Les symptômes chez les personnes âgées qui diffèrent des symptômes typiques comprennent :
+                    <ul class="mes-para">
+                         <li class="list-gestes">une manifestation tardive de la fièvre et des autres symptômes.</li>
+                         <li class="list-gestes">l'état confusionnel aigu, la confusion mentale, les chutes, le déclin fonctionnel</li>
+                         <li class="list-gestes">une diminution de la pression artérielle</li>
+                         <li class="list-gestes">l'hypoxie sans symptômes respiratoires</li>
+                     </ul>
+                </p>
+            </div>
+            <div class="image">
+                <img class=" imgg" src="../images/personneAgee.jpg" alt="Personne agee">
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <footer id="footer">
+        <div class="contenu-footer">
+            <div class="bloc-footer-services">
+                <h2 class="mes-titres-footer">A propos</h2>
+                <ul class="links-footer" class="mes-para">
+                  <li class="link-footer"><a href="">Partenariat</a></li>
+                  <li class="link-footer"><a href="formulaire.html">Demande d'informations</a></li>
+                  <li class="link-footer"><a href="">Cookies</a></li>
+                  <li class="link-footer"><a href="">Mentions legales</a></li>
+                  <li class="link-footer"><a href="">Politique de confidentialite</a></li>
+                </ul>
+            </div>
+  
+            <div class="bloc-footer-services">
+                <h2 class="mes-titres-footer">Restons en contact</h2>
+                <ul>
+                  <li class="none"><p class="mes-para">55-44-44-55-55</p></li>
+                  <li class="none"><p class="mes-para">supportclient@contact.com</p></li>
+                  <li class="none"><p class="mes-para">Cite 5 Juillet, Bab Ezzouar</p></li>
+                </ul>
+            </div>
+            <div class="bloc-footer-services">
+                <h2 class="mes-titres-footer">Suivez-nous</h2>
+                <ul class="links-footer">
+                    <li class="link-footer"><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                    <li class="link-footer"><a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                    <li class="link-footer"><a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter-square"></i> Twitter</a></li>
+                    <li class="link-footer"><a href="https://Youtube.com"><i class="fa-brands fa-youtube"></i> Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
